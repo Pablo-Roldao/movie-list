@@ -6,3 +6,7 @@
 body {
     background-color: black;
 }
+
+.movie-card-img {
+    box-sizing: content-box;
+}

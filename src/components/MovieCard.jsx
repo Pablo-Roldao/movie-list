@@ -6,8 +6,8 @@ const imagesURL = import.meta.env.VITE_IMG;
 
 const MovieCard = ({ movie, showLink = true }) => {
   return (
-    <div className="movie-card bg-black m-2 p-2 rounded text-center" id="movie-card">
-      <img src={imagesURL + movie.poster_path} alt={movie.title}  className="rounded" id="movie-card-img" />
+    <div className="movie-card bg-black m-2 p-2 rounded text-center col-2" id="movie-card">
+      <img src={imagesURL + movie.poster_path} alt={movie.title}  className="img-fluid rounded" id="movie-card-img" />
       <h3>{movie.title}</h3>
       <p>
         <FaStar /> {movie.vote_average}

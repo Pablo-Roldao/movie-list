@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <div className="d-flex justify-content-center text-success">
-        <div className="container-fluid bg-dark rounded m-4 p-3">
+        <div className="container-fluid bg-dark rounded m-4 p-3 row d-flex justify-content-center">
           <h2 className="display-6 text-center ">Melhores filmes</h2>
             {topMovies.length > 0 && topMovies.map((movie) =>
               <MovieCard key={movie.id} movie={movie} />
