@@ -23,13 +23,12 @@ const Home = () => {
 
   return (
     <>
-      <div className="d-flex justify-content-center ">
-        <div className="container-fluid text-success bg-dark rounded m-3">
+      <div className="d-flex justify-content-center text-success">
+        <div className="container-fluid bg-dark rounded m-4 p-3">
           <h2 className="display-6 text-center ">Melhores filmes</h2>
-          <div className="movies-container row filmecard">
-            {topMovies.length > 0 &&
-              topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
-          </div>
+            {topMovies.length > 0 && topMovies.map((movie) =>
+              <MovieCard key={movie.id} movie={movie} />
+            )}
         </div>
       </div>
     </>
