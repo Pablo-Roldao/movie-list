@@ -24,14 +24,16 @@ const Search = () => {
   }, [query]);
 
   return (
-    <div className="container">
-      <h2 className="title">
+    <div className="d-flex justify-content-center text-success">
+      <div className="container-fluid bg-dark rounded m-4 p-3 row d-flex justify-content-center">
+      <h2  className="display-6 text-center">
         Resultados para: <span className="query-text">{query}</span>
       </h2>
       <div className="movies-container">
         {movies.length > 0 &&
           movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </div>
+    </div>
     </div>
   );
 };
